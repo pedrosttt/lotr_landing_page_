@@ -1,0 +1,111 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.highlight {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.highlight h2 {
+    width: 70%; /* Defina a largura desejada para o texto */
+    margin: 0 auto; /* Centraliza horizontalmente o elemento h2 */
+    text-align: center; /* Centraliza o texto dentro do elemento h2 */
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px;
+    width: 1280px; /* Defina o tamanho desejado para as imagens */
+    height: 720px; /* Defina a altura desejada para as imagens */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 215, 0, 0.8); /* Cor de sobreposição */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra completamente o contêiner, mantendo as proporções */
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Cinzel', sans-serif;
+}
+
+p, h2 {
+    font-family: 'Alegreya', sans-serif;
+    font-weight: normal;
+}
+
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0 140px;
+    text-align: center;
+    display: block;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Alegreya', sans-serif;
+}
+
+.contact p br {
+    display: none;
+}
+
